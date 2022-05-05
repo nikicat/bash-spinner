@@ -56,7 +56,6 @@ function _spinner() {
         stop)
             if [[ -z ${3} ]]; then
                 echo "spinner is not running.."
-                exit 1
             fi
 
             kill $3 > /dev/null 2>&1
@@ -72,7 +71,6 @@ function _spinner() {
             ;;
         *)
             echo "invalid argument, try {start/stop}"
-            exit 1
             ;;
     esac
 }
